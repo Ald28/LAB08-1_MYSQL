@@ -1,0 +1,20 @@
+<div class="container" style="margin-top:70px;">
+    <div class="row mt-5">
+        <h3 class="text-center text-uppercase p-2">Crear Nueva Orden de Venta</h3>
+        <form action="/add" method="POST">
+            <div class="mb-3">
+                <label for="fecha_emision" class="form-label">Fecha Emisión</label>
+                <input type="date" class="form-control" id="fecha_emision" name="fecha_emision" required>
+            </div>
+            <div class="mb-3">
+                <label for="motivo" class="form-label">Motivo</label>
+                <input type="text" class="form-control" id="motivo" name="motivo" required>
+            </div>
+            <div class="mb-3">
+                <label for="situacion" class="form-label">Situación</label>
+                <input type="text" class="form-control" id="situacion" name="situacion" required>
+            </div>
+            <button type="submit" class="btn btn-primary" href="/list">Crear Orden de Venta</button>
+        </form>
+    </div>
+</div>

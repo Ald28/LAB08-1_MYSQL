@@ -1,0 +1,29 @@
+<div class="container" style="margin-top:70px;">
+    <div class="row mt-5">
+        <h3 class="text-center text-uppercase p-2">Editar Orden de Venta</h3>
+        <form action="/labo_edit/{{id}}" method="POST">
+            <div class="mb-3">
+                <label for="razon_social" class="form-label">Razon social</label>
+                <input type="text" class="form-control" id="razon_social" name="razon_social" value="{{razon_social}}" required>
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">direccion</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" value="{{direccion}}" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">telefono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" value="{{telefono}}" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">email</label>
+                <input type="text" class="form-control" id="email" name="email" value="{{email}}" required>
+            </div>
+            <div class="mb-3">
+                <label for="contacto" class="form-label">contacto</label>
+                <input type="text" class="form-control" id="contacto" name="contacto" value="{{contacto}}" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Actualizar Orden de Venta</button>
+            <a href="/labo_list" class="btn btn-secondary">Regresar</a>
+        </form>
+    </div>
+</div>
